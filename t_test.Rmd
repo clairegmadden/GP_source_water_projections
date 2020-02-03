@@ -1,0 +1,52 @@
+---
+title: "source_water_t_test"
+author: "Claire Madden"
+date: "2/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+
+library(tidyverse)
+library(janitor)
+
+```
+
+
+
+```{r}
+historic <- read_csv("historic.csv") %>% 
+  clean_names()
+
+projection <- read_csv("caladapt.csv") %>% 
+  clean_names() %>% 
+  mutate(version = str_to_lower(version))
+
+```
+
+
+
+```{r}
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
